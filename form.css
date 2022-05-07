@@ -1,0 +1,30 @@
+.form{
+    padding: 0px 340px;
+}
+.name{
+    width: 100%;
+    margin: 10px 0;
+    height: 45px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9;
+}
+.email{
+    margin: 10px 0;
+    height: 45px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9;
+    width: 48%;
+}
+.Message{
+    width: 100%;
+    margin: 10px 0;
+    height: 100px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9;
+}
