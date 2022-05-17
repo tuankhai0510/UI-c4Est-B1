@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamdongho</title>
+    <style>
+        #lamdongho{
+            background: black;
+    color: white;
+    width: 601px;
+    height: 102px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 102px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: cursive;
+    border-radius: 15px;
+        }
+        body{
+            background: rgb(2,0,36);
+background: linear-gradient(61deg, rgba(2,0,36,1) 0%, rgba(7,143,96,1) 35%, rgba(9,138,75,1) 63%, rgba(15,121,9,0.989233193277311) 100%, rgba(0,212,255,1) 100%);
+
+        }
+    </style>
+</head>
+<body >
+    <div id="lamdongho">
+       
+    </div>
+    <script>
+        function dongho(){
+            var homnay = new Date();
+            var day = homnay.getDay();
+            var gio = homnay.getHours();
+            var phut = homnay.getMinutes();
+            var giay = homnay.getSeconds();
+            setTimeout("dongho()",1000);
+              if(giay <10){
+                  giay = "0" +giay
+              } 
+              if(gio <10){
+                  gio = "0" +giay
+              }
+              if(phut <10){
+                  phut = "0" +giay
+              }
+              
+              switch(day){
+                  case 1 :{
+                      day = "Mon"
+                     break;
+                  }
+                  case 2 :{
+                      day = "Tue"
+                     break;
+                  }
+                  case 3 :{
+                      day = "wed"
+                     break;
+                  }
+                  case 4 :{
+                      day = "THU"
+                     break;
+                  }
+                  case 5 :{
+                      day = "Fri"
+                     break;
+                  }
+                  case 6 :{
+                      day = "SAT"
+                     break;
+                  }
+                  case 0 :{
+                      day = "sun"
+                     break;
+                  }
+              }
+              
+            var thongtin = day +"&nbsp;&nbsp;&nbsp;&nbsp"+ gio +"&nbsp;&nbsp;&nbsp;&nbsp"+ phut +"&nbsp;&nbsp;&nbsp;&nbsp"+ giay;
+            document.getElementById('lamdongho').innerHTML = thongtin;
+        }
+        dongho();
+        
+    </script>
+    
+</body>
+</html>
