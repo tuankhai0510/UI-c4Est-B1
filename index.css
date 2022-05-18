@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+.container{
+    margin: 10px auto;
+    width: 200px;
+}
+.manhinh{
+    width: 100%;
+    height: 35px;
+    background: grey;
+    border: 0.1px;
+    position: relative;
+}
+.keyboard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item{
+    height: 50px;
+    border:0.1px solid rgb(212,212,212); 
+    outline : none;
+    cursor: pointer;
+}
+.item:hover{
+    background-color: rgb(135, 138, 138);
+}
+.item15 {
+    background-color: orangered;
+}
+.manhinh .input{
+    position: absolute;
+    top:0;
+    right: 5px;
+    font-size: 32px;
+    z-index: 222;
+    color: black;
+}
